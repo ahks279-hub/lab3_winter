@@ -7,7 +7,6 @@ int main() {
     printf("Enter the student's mark (0-100): ");
     scanf("%d", &mark);
 
-    // Outer if for checking if the mark is within a valid range
     if (mark >= 0 && mark <= 100) {
         
         // Check for High Distinction (HD)
@@ -36,7 +35,6 @@ int main() {
         }
 
     } else {
-        // If the mark is out of range
         printf("Error: Invalid mark entered. Mark should be between 0 and 100.\n");
     }
 
