@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#define box1_x1 10
+#define box1_y1 10
+#define box1_x2 50
+#define box1_y2 50
+
+#define box2_x1 150
+#define box2_y1 150
+#define box2_x2 100
+#define box2_y2 120
+
+int main(){
+    int x,y;
+   
+    
+    printf("Enter x and y coordinates of the point:\n ");
+    scanf("%d %d", &x,&y);
+    
+    if ( x >= box1_x1 && x<= box1_x2 && y >= box1_y1 && y <= box1_y2)
+    printf("\nThe point lies in box 1");
+    
+    else if( x <= box2_x1 && x >= box2_x2 && y <= box2_y1 && y >= box2_y2)
+    printf("\nThe point lies in box 2");
+    
+    else 
+    printf(" the point lies outside the boxes");
+    return 0;
+    
+}
